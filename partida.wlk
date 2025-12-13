@@ -137,7 +137,7 @@ object partida {
   
   method configurarTeclas() {
     keyboard.space().onPressDo({ if (!pausaActiva) menuPausa.iniciar() })
-    keyboard.p().onPressDo({ if (final) { self.sonidoFinalOff() game.schedule(150, { botonSalir.realizarAccion(self) }) } }) 
+    keyboard.p().onPressDo({ if (final) { self.sonidoFinalOff() game.schedule(150, { botonSalir.realizarAccion() }) } }) 
   }
 
 }
